@@ -53,3 +53,4 @@ def clean_transaction(tx):
     cleaned['phone'] = normalize_phone(tx.get('phone'))
     
     return cleaned
+

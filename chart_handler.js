@@ -1,4 +1,6 @@
-async function loadDashboardData() {
+async // TODO: add loading spinner
+// NOTE: might need to handle larger datasets differently
+function loadDashboardData() {
     try {
         const timestamp = new Date().getTime();
         const response = await fetch("data/processed/dashboard.json?t=" + timestamp);
@@ -66,3 +68,4 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM ready, loading data...");
     loadDashboardData();
 });
+
