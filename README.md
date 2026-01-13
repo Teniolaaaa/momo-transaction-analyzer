@@ -11,7 +11,15 @@
 - Rajveer Singh Jolly
 
 ## Project Overview
-A full-stack application for processing mobile money transaction data from XML format. The system implements an ETL pipeline to extract, transform, and load transaction data into a relational database, with a frontend dashboard for visualization and analysis.
+
+This project analyzes MoMo (Mobile Money) transaction data from XML files. It cleans up the data, stores it in a database, and displays everything on a web dashboard. We built an ETL pipeline that takes messy transaction XML files and turns them into organized, easy-to-read information.
+
+**Team Contributions:**
+- **Teniola** - ETL pipeline, database setup, project coordination
+- **Gael** - XML parsing research and implementation
+- **Kevin** - Frontend dashboard design
+- **Michaella** - Testing and data validation
+- **Rajveer** - Documentation and README
 
 ## System Architecture
 
@@ -147,7 +155,7 @@ This is an academic project. For suggestions or improvements:
 
 Academic project for African Leadership University. All rights reserved.
 
-## Contact
+$challenges## Contact
 
 **Project Lead:** Teniola Adam Olaleye
 **GitHub:** [@Teniolaaaa](https://github.com/Teniolaaaa)
@@ -155,6 +163,10 @@ Academic project for African Leadership University. All rights reserved.
 ---
 
 *Last Updated: January 2026*
+
+
+
+
 
 
 
