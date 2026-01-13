@@ -143,32 +143,8 @@ pytest tests/
 
 Tests cover XML parsing and data cleaning functionality.
 
-## Contributing
-
-This is an academic project. For suggestions or improvements:
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Submit a pull request
-
-## License
-
-Academic project for African Leadership University. All rights reserved.
-
-$challenges## Contact
-
-**Project Lead:** Teniola Adam Olaleye
-**GitHub:** [@Teniolaaaa](https://github.com/Teniolaaaa)
 
 ---
 
 *Last Updated: January 2026*
-
-
-
-
-
-
-
-
 
