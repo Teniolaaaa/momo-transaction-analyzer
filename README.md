@@ -41,8 +41,7 @@ momo-transaction-analyzer/
  README.md                 # Project documentation
  requirements.txt          # Python dependencies
  index.html               # Dashboard entry point
- web/
-    styles.css          # Dashboard styling
+styles.css          # Dashboard styling
     chart_handler.js    # Frontend logic
  data/
     raw/                # XML input files
@@ -151,6 +150,7 @@ Tests cover XML parsing and data cleaning functionality.
 ---
 
 *Last Updated: January 2026*
+
 
 
 
