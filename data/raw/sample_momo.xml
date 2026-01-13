@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions>
+    <transaction>
+        <id>TXN001</id>
+        <date>2026-01-12</date>
+        <type>received</type>
+        <amount>75000</amount>
+        <phone>+250788123456</phone>
+        <description>Money received from John</description>
+    </transaction>
+    <transaction>
+        <id>TXN002</id>
+        <date>2026-01-12</date>
+        <type>sent</type>
+        <amount>25000</amount>
+        <phone>+250795758784</phone>
+        <description>Shopping payment</description>
+    </transaction>
+    <transaction>
+        <id>TXN003</id>
+        <date>2026-01-10</date>
+        <type>payment</type>
+        <amount>15000</amount>
+        <phone>+250795758784</phone>
+        <description>Electricity bill</description>
+    </transaction>
+    <transaction>
+        <id>TXN004</id>
+        <date>2026-01-08</date>
+        <type>transfer</type>
+        <amount>50000</amount>
+        <phone>+250795758784</phone>
+        <description>Money transfer</description>
+    </transaction>
+    <transaction>
+        <id>TXN005</id>
+        <date>2026-01-05</date>
+        <type>airtime</type>
+        <amount>5000</amount>
+        <phone>+250795758784</phone>
+        <description>Airtime purchase</description>
+    </transaction>
+    <transaction>
+        <id>TXN006</id>
+        <date>2025-12-30</date>
+        <type>received</type>
+        <amount>120000</amount>
+        <phone>+250782654321</phone>
+        <description>Salary payment</description>
+    </transaction>
+    <transaction>
+        <id>TXN007</id>
+        <date>2025-12-28</date>
+        <type>payment</type>
+        <amount>35000</amount>
+        <phone>+250795758784</phone>
+        <description>Entertainment</description>
+    </transaction>
+    <transaction>
+        <id>TXN008</id>
+        <date>2025-12-25</date>
+        <type>sent</type>
+        <amount>45000</amount>
+        <phone>+250795758784</phone>
+        <description>Online shopping</description>
+    </transaction>
+    <transaction>
+        <id>TXN009</id>
+        <date>2025-12-22</date>
+        <type>airtime</type>
+        <amount>3000</amount>
+        <phone>+250795758784</phone>
+        <description>Mobile credit</description>
+    </transaction>
+    <transaction>
+        <id>TXN010</id>
+        <date>2025-12-20</date>
+        <type>received</type>
+        <amount>85000</amount>
+        <phone>+250789456123</phone>
+        <description>Business payment</description>
+    </transaction>
+    <transaction>
+        <id>TXN011</id>
+        <date>2025-12-15</date>
+        <type>payment</type>
+        <amount>27500</amount>
+        <phone>+250795758784</phone>
+        <description>Water bill</description>
+    </transaction>
+    <transaction>
+        <id>TXN012</id>
+        <date>2025-12-10</date>
+        <type>airtime</type>
+        <amount>7000</amount>
+        <phone>+250795758784</phone>
+        <description>Airtime top-up</description>
+    </transaction>
+</transactions>
