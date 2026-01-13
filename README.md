@@ -23,7 +23,9 @@ This project analyzes MoMo (Mobile Money) transaction data from XML files. It cl
 
 ## System Architecture
 
-**Architecture Diagram:** [View on Draw.io](https://drive.google.com/file/d/17G9310r-MtVn4tk-Nj7M_gQCHik2_YOf/view?usp=drive_link)
+**Architecture Diagram:**
+
+![System Architecture](architecture-diagram.png)
 
 The system follows a typical ETL architecture:
 - **Extract:** Parse XML transaction files
@@ -150,6 +152,7 @@ Tests cover XML parsing and data cleaning functionality.
 ---
 
 *Last Updated: January 2026*
+
 
 
 
