@@ -25,11 +25,7 @@ The system follows a typical ETL architecture:
 
 ## Project Management
 
-**GitHub Projects Board:** [View Scrum Board](https://github.com/users/Teniolaaaa/projects/1/views/1)
-
-**Sprint Documentation:** [View SCRUM.md](SCRUM.md)
-
-Task tracking and sprint management for the development team.
+**Scrum Board:** [View on GitHub Projects](https://github.com/users/Teniolaaaa/projects/1/views/1)
 
 ## Project Structure
 ```
@@ -159,5 +155,6 @@ Academic project for African Leadership University. All rights reserved.
 ---
 
 *Last Updated: January 2026*
+
 
 
