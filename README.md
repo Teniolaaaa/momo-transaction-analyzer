@@ -15,7 +15,7 @@ A full-stack application for processing mobile money transaction data from XML f
 
 ## System Architecture
 
-**Architecture Diagram:** [To be added - diagram.md]
+**Architecture Diagram:** [View ARCHITECTURE.md](ARCHITECTURE.md)
 
 The system follows a typical ETL architecture:
 - **Extract:** Parse XML transaction files
@@ -25,7 +25,7 @@ The system follows a typical ETL architecture:
 
 ## Project Management
 
-**Scrum Board:** [To be added - GitHub Projects link]
+**Scrum Board:** [View SCRUM.md](SCRUM.md)
 
 Task tracking and sprint management for the development team.
 
