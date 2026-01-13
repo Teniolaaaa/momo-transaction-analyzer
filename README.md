@@ -143,8 +143,13 @@ pytest tests/
 
 Tests cover XML parsing and data cleaning functionality.
 
+## Notes
+- Still working on making the dashboard auto-refresh
+- Need to test with bigger XML files
+
 
 ---
 
 *Last Updated: January 2026*
+
 
