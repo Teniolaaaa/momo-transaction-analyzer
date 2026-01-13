@@ -1,4 +1,4 @@
-async // TODO: add loading spinner
+// TODO: add loading spinner
 // NOTE: might need to handle larger datasets differently
 function loadDashboardData() {
     try {
@@ -68,4 +68,5 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM ready, loading data...");
     loadDashboardData();
 });
+
 

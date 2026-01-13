@@ -2,6 +2,8 @@
 from config import CATEGORIES
 
 def categorize_transaction(tx):
+    # TODO: Add more patterns for withdrawals and deposits
+    # NOTE: Some transactions might not match any category
     """
     Assign category to transaction based on type and description
     Returns category name as string
@@ -28,5 +30,6 @@ def add_categories(transactions):
         tx['category'] = categorize_transaction(tx)
     
     return transactions
+
 
 
