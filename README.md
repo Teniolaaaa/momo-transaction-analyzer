@@ -15,7 +15,7 @@ A full-stack application for processing mobile money transaction data from XML f
 
 ## System Architecture
 
-**Architecture Diagram:** [View ARCHITECTURE.md](ARCHITECTURE.md)
+**Architecture Diagram:** [View on Draw.io](https://drive.google.com/file/d/17G9310r-MtVn4tk-Nj7M_gQCHik2_YOf/view?usp=drive_link) | [Documentation](ARCHITECTURE.md)
 
 The system follows a typical ETL architecture:
 - **Extract:** Parse XML transaction files
@@ -25,7 +25,9 @@ The system follows a typical ETL architecture:
 
 ## Project Management
 
-**Scrum Board:** [View SCRUM.md](SCRUM.md)
+**GitHub Projects Board:** [View Scrum Board](https://github.com/users/Teniolaaaa/projects/1/views/1)
+
+**Sprint Documentation:** [View SCRUM.md](SCRUM.md)
 
 Task tracking and sprint management for the development team.
 
@@ -151,9 +153,10 @@ Academic project for African Leadership University. All rights reserved.
 
 ## Contact
 
-**Project Lead:** Teniola Adam Olaleye  
+**Project Lead:** Teniola Adam Olaleye
 **GitHub:** [@Teniolaaaa](https://github.com/Teniolaaaa)
 
 ---
 
 *Last Updated: January 2026*
+
