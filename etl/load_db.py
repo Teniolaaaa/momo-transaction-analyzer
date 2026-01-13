@@ -1,6 +1,6 @@
 """Database operations for storing transactions"""
 import sqlite3
-from etl.config import DATABASE_PATH
+from config import DATABASE_PATH
 
 def create_tables(conn):
     """Create transactions table if it doesn't exist"""
@@ -47,3 +47,4 @@ def get_connection():
     """Create and return database connection"""
     conn = sqlite3.connect(DATABASE_PATH)
     return conn
+

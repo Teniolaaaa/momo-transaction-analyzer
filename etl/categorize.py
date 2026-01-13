@@ -1,5 +1,5 @@
 # Categorize transactions based on type and description
-from etl.config import CATEGORIES
+from config import CATEGORIES
 
 def categorize_transaction(tx):
     """
@@ -28,3 +28,4 @@ def add_categories(transactions):
         tx['category'] = categorize_transaction(tx)
     
     return transactions
+

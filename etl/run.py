@@ -4,11 +4,11 @@ import json
 import logging
 from pathlib import Path
 
-from etl.parse_xml import parse_transactions, validate_transaction
-from etl.clean_normalize import clean_transaction
-from etl.categorize import add_categories
-from etl.load_db import get_connection, create_tables, insert_transactions
-from etl.config import PROCESSED_DIR, LOGS_DIR
+from parse_xml import parse_transactions, validate_transaction
+from clean_normalize import clean_transaction
+from categorize import add_categories
+from load_db import get_connection, create_tables, insert_transactions
+from config import PROCESSED_DIR, LOGS_DIR
 
 # Setup logging
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -104,3 +104,4 @@ if __name__ == '__main__':
         exit(1)
     
     run_pipeline(xml_file)
+
