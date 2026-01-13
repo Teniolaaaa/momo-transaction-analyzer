@@ -1,4 +1,4 @@
-"""Parse XML transaction data"""
+# Parse XML transaction data
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -12,7 +12,9 @@ def parse_transactions(xml_path):
     
     transactions = []
     
+    # Loop through each transaction element in the XML
     for transaction in root.findall('.//transaction'):
+        # Extract data from each field
         tx_data = {
             'id': transaction.find('id').text if transaction.find('id') is not None else None,
             'date': transaction.find('date').text if transaction.find('date') is not None else None,
@@ -26,6 +28,8 @@ def parse_transactions(xml_path):
     return transactions
 
 def validate_transaction(tx):
-    """Check if transaction has required fields"""
+    """Check if transaction has all the required fields before processing"""
     required_fields = ['date', 'amount', 'type']
+    
+    # Make sure all required fields are present and not None
     return all(tx.get(field) is not None for field in required_fields)

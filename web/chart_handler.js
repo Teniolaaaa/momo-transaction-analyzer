@@ -1,42 +1,68 @@
-// Load dashboard data from JSON file
 async function loadDashboardData() {
     try {
-        const response = await fetch('data/processed/dashboard.json');
-        const data = await response.json();
+        const timestamp = new Date().getTime();
+        const response = await fetch("data/processed/dashboard.json?t=" + timestamp);
         
-        updateSummaryCards(data);
-        displayTransactions(data.recent_transactions || []);
+        if (!response.ok) {
+            throw new Error("HTTP error! status: " + response.status);
+        }
+        
+        const data = await response.json();
+        console.log("Loaded data:", data);
+        
+        updateStats(data);
+        renderTransactions(data.recent_transactions || []);
+        updateTimestamp();
         
     } catch (error) {
-        console.error('Could not load data:', error);
-        showError();
+        console.error("Failed to load dashboard data:", error);
+        alert("Error loading data: " + error.message);
     }
 }
 
-function updateSummaryCards(data) {
-    document.getElementById('total-transactions').textContent = data.total_transactions || 0;
-    document.getElementById('total-amount').textContent = `$${(data.total_amount || 0).toFixed(2)}`;
-    document.getElementById('category-count').textContent = data.categories?.length || 0;
+function formatRWF(amount) {
+    const formatted = new Intl.NumberFormat("en-US").format(amount);
+    return "RWF " + formatted;
 }
 
-function displayTransactions(transactions) {
-    const tbody = document.querySelector('#transactions tbody');
-    tbody.innerHTML = '';
+function updateStats(data) {
+    document.getElementById("total-transactions").textContent = data.total_transactions || 0;
+    document.getElementById("total-amount").textContent = formatRWF(data.total_amount || 0);
+    document.getElementById("category-count").textContent = data.categories ? data.categories.length : 0;
+}
+
+function updateTimestamp() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString("en-US", { 
+        hour: "2-digit", 
+        minute: "2-digit" 
+    });
+    document.getElementById("last-update").textContent = timeString;
+}
+
+function renderTransactions(transactions) {
+    const tbody = document.getElementById("transactions-body");
+    tbody.innerHTML = "";
     
-    transactions.forEach(tx => {
-        const row = tbody.insertRow();
-        row.innerHTML = `
-            <td>${tx.date}</td>
-            <td>${tx.type}</td>
-            <td>$${tx.amount.toFixed(2)}</td>
-            <td>${tx.category}</td>
-            <td>${tx.phone}</td>
-        `;
+    if (transactions.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: 2rem; color: #999;">No transactions available</td></tr>';
+        return;
+    }
+    
+    transactions.forEach(function(tx) {
+        const row = document.createElement("tr");
+        row.innerHTML = 
+            "<td><strong>" + tx.date + "</strong></td>" +
+            "<td>" + tx.type + "</td>" +
+            '<td style="color: #10b981; font-weight: 600;">' + formatRWF(tx.amount) + "</td>" +
+            '<td><span style="background: #667eea; color: white; padding: 5px 12px; border-radius: 15px; font-size: 0.85rem;">' + tx.category + "</span></td>" +
+            '<td style="font-family: monospace;">' + tx.phone + "</td>";
+        tbody.appendChild(row);
     });
 }
 
-function showError() {
-    document.getElementById('total-transactions').textContent = 'Error loading data';
-}
-
-document.addEventListener('DOMContentLoaded', loadDashboardData);
+console.log("Script loaded");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM ready, loading data...");
+    loadDashboardData();
+});

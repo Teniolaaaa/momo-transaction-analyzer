@@ -1,9 +1,10 @@
 {
-  "total_transactions": 3,
-  "total_amount": 21000.0,
+  "total_transactions": 15,
+  "total_amount": 513500.0,
   "categories": [
     "TRANSFER",
-    "AIRTIME"
+    "AIRTIME",
+    "RECEIVED"
   ],
   "recent_transactions": [
     {
@@ -14,6 +15,20 @@
       "phone": "+250788999888"
     },
     {
+      "date": "2024-01-17",
+      "type": "received",
+      "amount": 75000.0,
+      "category": "RECEIVED",
+      "phone": "+250788123456"
+    },
+    {
+      "date": "2024-01-17",
+      "type": "sent",
+      "amount": 25000.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
       "date": "2024-01-16",
       "type": "airtime",
       "amount": 1000.0,
@@ -21,11 +36,81 @@
       "phone": "+250788654321"
     },
     {
+      "date": "2024-01-16",
+      "type": "payment",
+      "amount": 15000.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-16",
+      "type": "transfer",
+      "amount": 50000.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-16",
+      "type": "airtime",
+      "amount": 5000.0,
+      "category": "AIRTIME",
+      "phone": "+250795758784"
+    },
+    {
       "date": "2024-01-15",
       "type": "transfer",
       "amount": 5000.0,
       "category": "TRANSFER",
       "phone": "+250788123456"
+    },
+    {
+      "date": "2024-01-15",
+      "type": "received",
+      "amount": 120000.0,
+      "category": "TRANSFER",
+      "phone": "+250782654321"
+    },
+    {
+      "date": "2024-01-15",
+      "type": "payment",
+      "amount": 35000.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-14",
+      "type": "sent",
+      "amount": 45000.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-14",
+      "type": "airtime",
+      "amount": 3000.0,
+      "category": "AIRTIME",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-13",
+      "type": "received",
+      "amount": 85000.0,
+      "category": "TRANSFER",
+      "phone": "+250789456123"
+    },
+    {
+      "date": "2024-01-13",
+      "type": "payment",
+      "amount": 27500.0,
+      "category": "TRANSFER",
+      "phone": "+250795758784"
+    },
+    {
+      "date": "2024-01-12",
+      "type": "airtime",
+      "amount": 7000.0,
+      "category": "AIRTIME",
+      "phone": "+250795758784"
     }
   ]
 }
