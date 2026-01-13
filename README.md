@@ -15,7 +15,7 @@ A full-stack application for processing mobile money transaction data from XML f
 
 ## System Architecture
 
-**Architecture Diagram:** [View on Draw.io](https://drive.google.com/file/d/17G9310r-MtVn4tk-Nj7M_gQCHik2_YOf/view?usp=drive_link) | [Documentation](ARCHITECTURE.md)
+**Architecture Diagram:** [View on Draw.io](https://drive.google.com/file/d/17G9310r-MtVn4tk-Nj7M_gQCHik2_YOf/view?usp=drive_link)
 
 The system follows a typical ETL architecture:
 - **Extract:** Parse XML transaction files
@@ -159,4 +159,5 @@ Academic project for African Leadership University. All rights reserved.
 ---
 
 *Last Updated: January 2026*
+
 
