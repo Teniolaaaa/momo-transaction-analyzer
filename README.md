@@ -186,6 +186,7 @@ momo-transaction-analyzer/
 
 ---
 
+
 ## 🤖 AI Usage Log
 
 See [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs2.pdf) for a detailed log of AI assistance and code generation.
@@ -255,19 +256,17 @@ See [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20
 
 ---
 
+
 ## 📄 Documentation
 
 - **Database Design Doc:** [docs/Database_Design_Document_EWD14.md](docs/Database_Design_Document_EWD14.md)
 - **ERD & Architecture Diagrams:** [docs/erd_diagram.png](docs/erd_diagram.png), [docs/architecture_diagram.png](docs/architecture_diagram.png)
-- **AI Usage Log:** [docs/AI_Usage_Log_EWD14.md](docs/AI_Usage_Log_EWD14.md)
+- **AI Usage Log:** [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs2.pdf)
 - **Design Rationale:** [docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md)
 
 ---
 
 
-## 🤖 AI Usage Log
-
-See [docs/AI Usage Log - Google Docs.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs.pdf) for a detailed log of AI assistance and code generation.
 
 ---
 
