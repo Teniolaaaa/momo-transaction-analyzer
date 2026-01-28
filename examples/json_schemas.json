@@ -1,0 +1,77 @@
+{
+  "User": {
+    "user_id": 1,
+    "phone_number": "+250799999999",
+    "name": "Sam Test",
+    "created_at": "2024-01-01T10:00:00Z"
+  },
+  "Transaction_Category": {
+    "category_id": 1,
+    "category_name": "TRANSFER",
+    "description": "Money sent or received"
+  },
+  "Transaction": {
+    "transaction_id": 101,
+    "transaction_code": "TX123456",
+    "transaction_date": "2024-01-02T12:34:56Z",
+    "amount": 5000.00,
+    "description": "Payment for groceries",
+    "sender": {
+      "user_id": 1,
+      "name": "Sam Test"
+    },
+    "receiver": {
+      "user_id": 2,
+      "name": "Jane Doe"
+    },
+    "category": {
+      "category_id": 1,
+      "category_name": "TRANSFER"
+    }
+  },
+  "System_Log": {
+    "log_id": 1,
+    "log_time": "2024-01-02T12:35:00Z",
+    "log_level": "INFO",
+    "message": "Transaction processed successfully",
+    "transaction_id": 101
+  },
+  "Complex_Transaction": {
+    "transaction_id": 102,
+    "transaction_code": "TX654321",
+    "transaction_date": "2024-01-03T09:00:00Z",
+    "amount": 10000.00,
+    "description": "Salary payment",
+    "sender": {
+      "user_id": 3,
+      "name": "Employer Ltd",
+      "phone_number": "+250788888888"
+    },
+    "receiver": {
+      "user_id": 1,
+      "name": "Sam Test",
+      "phone_number": "+250799999999"
+    },
+    "category": {
+      "category_id": 2,
+      "category_name": "SALARY",
+      "description": "Monthly salary payment"
+    },
+    "logs": [
+      {
+        "log_id": 2,
+        "log_time": "2024-01-03T09:00:01Z",
+        "log_level": "INFO",
+        "message": "Transaction received",
+        "transaction_id": 102
+      },
+      {
+        "log_id": 3,
+        "log_time": "2024-01-03T09:00:02Z",
+        "log_level": "SUCCESS",
+        "message": "Transaction completed",
+        "transaction_id": 102
+      }
+    ]
+  }
+}

@@ -135,6 +135,7 @@ MoMo Transaction Analyzer is a collaborative project to process, clean, and anal
 
 ---
 
+
 ## 🗂️ Database Design
 
 **ERD Diagram:**
@@ -167,15 +168,27 @@ momo-transaction-analyzer/
 │   ├── erd_diagram.png
 │   ├── architecture_diagram.png
 │   ├── erd_design_and_rationale.md
-│   ├── AI_Usage_Log_EWD14.md
-│   └── Database_Design_Document_EWD14.md
+│   ├── Database_Design_Document_EWD14.md
+│   └── [AI Usage Log PDF]
+├── examples/
+│   └── json_schemas.json
 ├── tests/
 └── ...
 ```
 
 ---
 
-## ✨ Features
+## 🧩 JSON Data Modeling
+
+- See [examples/json_schemas.json](examples/json_schemas.json) for entity and complex transaction examples.
+- Each JSON object maps to a SQL table, with nested objects for relationships (e.g., sender, receiver, category, logs).
+- The file is humanized with realistic names and scenarios.
+
+---
+
+## 🤖 AI Usage Log
+
+See [docs/AI Usage Log - Google Docs.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs.pdf) for a detailed log of AI assistance and code generation.
 
 - End-to-end ETL pipeline: parse, clean, categorize, and load MoMo transactions
 - Robust database schema for analytics
