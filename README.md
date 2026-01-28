@@ -85,10 +85,7 @@ DELETE FROM Transactions WHERE transaction_id = 5;
 
 
 
-**Architecture Diagram:**
-![Architecture Diagram](docs/architecture_diagram.png)
 
-*See docs/architecture_diagram.png for the system architecture diagram. For the full ERD, see docs/erd_diagram.png. Design rationale and attribute list: docs/erd_design_and_rationale.md.*
 
 ---
 
@@ -127,13 +124,14 @@ MoMo Transaction Analyzer is a collaborative project to process, clean, and anal
 
 ---
 
+
 ## 🏗️ System Architecture
 
 **Architecture Diagram:**
 
 ![Architecture Diagram](docs/architecture_diagram.png)
 
-*This diagram shows the high-level flow: from raw XML ingestion, through ETL processing, to database storage and dashboard presentation.*
+*This diagram shows the high-level flow: from raw XML ingestion, through ETL processing, to database storage and dashboard presentation. If the image does not display, ensure docs/architecture_diagram.png is a valid PNG and tracked in git.*
 
 ---
 
