@@ -27,9 +27,15 @@ MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Mon
 
 ## Architecture Diagram
 
+
 ![System Architecture](docs/erd_diagram.png)
 
 *See docs/erd_diagram.png for the full ERD. Design rationale and attribute list: docs/erd_design_and_rationale.md.*
+
+**Architecture Diagram:**
+![Architecture Diagram](docs/architecture_diagram.png)
+
+*See docs/architecture_diagram.png for the system architecture diagram (add your diagram to this file).*
 
 ---
 
