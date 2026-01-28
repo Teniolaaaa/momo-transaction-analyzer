@@ -1,49 +1,117 @@
 
+# MoMo Transaction Analyzer
+
+---
 
 ## Team Information
-**Team Name:** MoMo Analytics Team
-<!--
-**Team Members:**
- data/
-    processed/          # JSON output
-    logs/               # ETL logs
-    db.sqlite3          # SQLite database
- etl/
-    parse_xml.py        # XML parser
-    categorize.py       # Transaction categorization
-    load_db.py          # Database operations
-- Python 3.8 or higher
 
-## Teamwork at the Core
-
-**Team Name:** MoMo Analytics Team
-
-**Team Members & Roles:**
-- **Teniola Adam Olaleye** (Team Lead): Coordinated the project, led the ETL and database design, and ensured everyone’s voice was heard.
-- **Kevin Manzi:** Designed the dashboard, working hand-in-hand with Rajveer to ensure the frontend matched our backend data.
-- **Rajveer Singh Jolly:** Documented our process, kept the README up to date, and helped Kevin with user experience.
-
-> **How We Worked:**  
-> We split tasks based on strengths, but always reviewed each other’s work. For example, Teniola and Gael would brainstorm schema changes, then Michaella and Rajveer would test and document. We held regular check-ins, shared screens, and used GitHub Projects to track progress. Every member contributed code, ideas, and feedback.
+- **Team Name:** MoMo Analytics Team
+- **Team Members:**
+   - Teniola Adam Olaleye (Team Lead)
+   - Kevin Manzi
+   - Rajveer Singh Jolly
+   - Gael Kamunuga Mparaye
+   - Michaella Kamikazi Karangwa
+- **Approach:**
+   - Agile-inspired workflow with a shared scrum board
+   - Regular code reviews and documentation updates
+   - Clear division of responsibilities (ETL, database, documentation, testing)
 
 ---
 
 ## Project Overview
 
-MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Money) SMS/XML data into actionable insights. Our ETL pipeline cleans, normalizes, and categorizes transactions, storing them in a robust MySQL database and presenting them on a user-friendly dashboard.
+MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Money) SMS/XML data into actionable insights. Our ETL pipeline cleans, normalizes, and categorizes transactions, storing them in a robust database and presenting them on a user-friendly dashboard.
 
 ---
 
-## System Architecture
+## Architecture Diagram
 
-- **Extract:** Parse XML transaction files (Gael, Michaella)
+![System Architecture](docs/erd_diagram.png)
+
+*See docs/erd_diagram.png for the full ERD. Design rationale and attribute list: docs/erd_design_and_rationale.md.*
 
 ---
+
+## Scrum Board
+
+- **Board:** [View on GitHub Projects](https://github.com/users/Teniolaaaa/projects/1/views/1)
+
+---
+
+## Project Structure
+```text
+data/
+    processed/          # JSON output
+    logs/               # ETL logs
+    db.sqlite3          # SQLite database
+etl/
+    parse_xml.py        # XML parser
+    categorize.py       # Transaction categorization
+    load_db.py          # Database operations
+    run.py              # ETL pipeline runner
+database/
+    database_setup.sql  # SQL schema
+docs/
+    erd_diagram.png     # ERD diagram image
+    erd_design_and_rationale.md # ERD rationale
+    AI_Usage_Log_EWD14.md # AI usage log
+    Database_Design_Document_EWD14.md # DB design doc
+tests/
+    ...                 # Unit tests
+index.html, app.py, requirements.txt, etc.
+```
+
+---
+
+## Features
+
+- XML transaction parsing and validation
+- Data cleaning and normalization
+- Automatic transaction categorization
+- Database storage (SQLite/MySQL)
+- JSON export for frontend
+- Web dashboard (HTML/CSS/JS)
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+- Web browser
+- Git
+
+### Installation Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Teniolaaaa/momo-transaction-analyzer.git
+   cd momo-transaction-analyzer
+   ```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the ETL pipeline**
+   ```bash
+   python etl/run.py --xml data/raw/sample_momo.xml
+   ```
+4. **View the dashboard**
+   - Open `index.html` in your web browser.
+
+---
+
+## Database Design
 
 ### Entity Relationship Diagram (ERD)
-- See `docs/erd_diagram.png` for our full ERD.
-- Design rationale and attribute list: `docs/erd_design_and_rationale.md`.
 
+![ERD Diagram](docs/erd_diagram.png)
+
+*See docs/erd_diagram.txt for ASCII version and docs/erd_design_and_rationale.md for rationale.*
+
+### Data Dictionary (Sample)
 | Table                     | Column             | Type           | Description                                 |
 |---------------------------|--------------------|----------------|---------------------------------------------|
 | Users                     | user_id            | INT, PK        | Unique user/customer ID                     |
@@ -67,16 +135,65 @@ MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Mon
 |                           | message            | TEXT           | Log message                                 |
 |                           | transaction_id     | INT, FK        | FK to Transactions (optional)               |
 | Transaction_Participants  | transaction_id     | INT, PK, FK    | FK to Transactions                          |
+|                           | user_id            | INT, PK, FK    | FK to Users                                 |
+|                           | role               | ENUM           | Role in transaction (sender/receiver/other) |
+
+---
+
+## Sample SQL Queries
+
+**Create:**
+```sql
+INSERT INTO Users (phone_number, name) VALUES ('+250799999999', 'Sam Test');
+```
+**Read:**
+```sql
+SELECT t.transaction_id, t.transaction_code, t.amount, u1.name AS sender, u2.name AS receiver
+FROM Transactions t
+JOIN Users u1 ON t.sender_id = u1.user_id
+LEFT JOIN Users u2 ON t.receiver_id = u2.user_id;
+```
+**Update:**
+```sql
+UPDATE Users SET name = 'Samuel Test' WHERE user_id = 6;
+```
+**Delete:**
+```sql
+DELETE FROM Transactions WHERE transaction_id = 5;
+```
+
+---
+
+## JSON Data Modeling
+
+- See `examples/json_schemas.json` for entity and complex transaction examples.
+
+---
+
+## AI Usage Log
+
+- See `docs/AI_Usage_Log_EWD14.md` for a detailed log of AI assistance and code generation.
+
+---
+
+## Contact
+
+For questions, contact the team leader or open an issue in the repository.
+
+---
+
+*Last Updated: January 2026*
 # MoMo Transaction Analyzer
 
 ## Team Information
 
-**Team Members:**
-- Teniola Adam Olaleye (Group Leader)
-- Kevin Manzi
-- Michaella Kamikazi Karangwa
-- Rajveer Singh Jolly
-## Teamwork at the Core
+- **Team Name:** MoMo Analytics Team
+- **Team Members:**
+   - [Your Names Here]
+- **Approach:**
+   - Agile-inspired workflow with a shared scrum board
+   - Regular code reviews and documentation updates
+   - Clear division of responsibilities (ETL, database, documentation, testing)
 
 **Team Members & Roles:**
 - **Gael Kamunuga Mparaye:** Took charge of XML parsing, collaborating closely with Michaella to validate data.
@@ -286,56 +403,4 @@ LEFT JOIN Users u2 ON t.receiver_id = u2.user_id;
 *Shows each transaction, who sent it, and who received it. Useful for audits and reports.*
 
 **Update:**  
-_Update a user's name_  
-```sql
-UPDATE Users SET name = 'Samuel Test' WHERE user_id = 6;
-```
-*Corrects or updates a user’s name in the database.*
-
-**Delete:**  
-_Delete a transaction_  
-```sql
-DELETE FROM Transactions WHERE transaction_id = 5;
-```
-*Removes a transaction record, e.g., if it was entered in error.*
-
----
-
-## JSON Data Modeling
-
-- See `examples/json_schemas.json` for entity and complex transaction examples.
-- Each JSON object maps to a SQL table, with nested objects for relationships (e.g., sender, receiver, category).
-
----
-
-## AI Usage Log
-
-- **Diagramming:** Used dbdiagram.io for drawing/exporting the ERD, based on our team’s design.
-- **AI Tools:** Used only for grammar, syntax, and MySQL best practices research. No ERD, SQL schema, or business logic was generated by AI.
-- **Attribution:** All technical explanations, documentation, and business logic are original and team-specific.
-
----
-
-## Contact
-
-For questions, contact the team leader or open an issue in the repository.
-
----
-
-*Last Updated: January 2026*
-
-Tests cover XML parsing and data cleaning functionality.
-
-## Notes
-- Still working on making the dashboard auto-refresh
-- Need to test with bigger XML files
-
-
----
-
-*Last Updated: January 2026*
-
-
-
-
 
