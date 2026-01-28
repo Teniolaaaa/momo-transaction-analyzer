@@ -38,9 +38,9 @@ The MoMo Transaction Analyzer is a collaborative project by Group EWD 14, design
 ---
 
 ## 3. ERD Diagram
-*See below for our Entity Relationship Diagram, exported from Draw.io/Lucidchart based on our team’s design discussions.*
+*See below for our Entity Relationship Diagram, exported from dbdiagram.io with explicit PK and FK labels based on our team’s design discussions.*
 
-![ERD Diagram](docs/erd_diagram.png)
+![ERD Diagram](docs/erd_diagram.png2.pdf)
 
 ---
 
