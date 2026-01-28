@@ -251,9 +251,10 @@ momo-transaction-analyzer/
 
 ---
 
+
 ## 🤖 AI Usage Log
 
-See [docs/AI_Usage_Log_EWD14.md](docs/AI_Usage_Log_EWD14.md) for a detailed log of AI assistance and code generation.
+See [docs/AI Usage Log - Google Docs.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs.pdf) for a detailed log of AI assistance and code generation.
 
 ---
 
