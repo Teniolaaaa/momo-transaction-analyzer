@@ -261,7 +261,19 @@ See [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20
 
 ## 📄 Documentation
 
-- **Database Design Doc:** [docs/Database_Design_Document_EWD14.md](docs/Database_Design_Document_EWD14.md)
+- **📄 Database Design Document:**
+  
+   [View the full Database Design Document (Markdown)](docs/Database_Design_Document_EWD14.md)
+  
+   This document includes:
+   - Team roles and collaboration
+   - ERD diagram (embedded and linked)
+   - Design rationale and data dictionary
+   - Sample SQL queries and screenshots
+   - Security, accuracy, and AI usage log
+   - JSON data modeling section
+  
+   > For the ERD diagram, see the embedded image and the [ERD Diagram (PDF)](docs/erd_diagram.png2.pdf) for high quality.
 - **ERD & Architecture Diagrams:** [docs/erd_diagram.png](docs/erd_diagram.png), [docs/architecture_diagram.png](docs/architecture_diagram.png)
 - **AI Usage Log:** [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs2.pdf)
 - **Design Rationale:** [docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md)
