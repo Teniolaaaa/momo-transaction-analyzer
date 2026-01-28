@@ -188,7 +188,7 @@ momo-transaction-analyzer/
 
 ## 🤖 AI Usage Log
 
-See [docs/AI Usage Log - Google Docs.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs.pdf) for a detailed log of AI assistance and code generation.
+See [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs2.pdf) for a detailed log of AI assistance and code generation.
 
 - End-to-end ETL pipeline: parse, clean, categorize, and load MoMo transactions
 - Robust database schema for analytics
