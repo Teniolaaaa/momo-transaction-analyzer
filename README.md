@@ -2,32 +2,17 @@
 
 ## Team Information
 **Team Name:** MoMo Analytics Team
-
+<!--
 **Team Members:**
  data/
-    raw/                # XML input files
     processed/          # JSON output
     logs/               # ETL logs
     db.sqlite3          # SQLite database
  etl/
     parse_xml.py        # XML parser
-    clean_normalize.py  # Data cleaning
     categorize.py       # Transaction categorization
     load_db.py          # Database operations
-    run.py             # Main ETL script
-    config.py          # Configuration
- tests/
-    test_parse_xml.py
-    test_clean_normalize.py
- api/
-     __init__.py         # API endpoints
-```
-
-## Installation & Setup
-
-### Prerequisites
 - Python 3.8 or higher
-# MoMo Transaction Analyzer
 
 ## Teamwork at the Core
 
@@ -35,9 +20,7 @@
 
 **Team Members & Roles:**
 - **Teniola Adam Olaleye** (Team Lead): Coordinated the project, led the ETL and database design, and ensured everyone’s voice was heard.
-- **Gael Kamunuga Mparaye:** Took charge of XML parsing, collaborating closely with Michaella to validate data.
 - **Kevin Manzi:** Designed the dashboard, working hand-in-hand with Rajveer to ensure the frontend matched our backend data.
-- **Michaella Kamikazi Karangwa:** Led testing and data validation, often pairing with Gael for quality checks.
 - **Rajveer Singh Jolly:** Documented our process, kept the README up to date, and helped Kevin with user experience.
 
 > **How We Worked:**  
@@ -54,20 +37,13 @@ MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Mon
 ## System Architecture
 
 - **Extract:** Parse XML transaction files (Gael, Michaella)
-- **Transform:** Clean and categorize data (Teniola, Michaella)
-- **Load:** Store in MySQL (Teniola, Rajveer)
-- **Present:** Dashboard and API (Kevin, Rajveer)
 
 ---
-
-## Project Structure
-## Database Design
 
 ### Entity Relationship Diagram (ERD)
 - See `docs/erd_diagram.png` for our full ERD.
 - Design rationale and attribute list: `docs/erd_design_and_rationale.md`.
 
-### Data Dictionary (Sample)
 | Table                     | Column             | Type           | Description                                 |
 |---------------------------|--------------------|----------------|---------------------------------------------|
 | Users                     | user_id            | INT, PK        | Unique user/customer ID                     |
@@ -91,36 +67,26 @@ MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Mon
 |                           | message            | TEXT           | Log message                                 |
 |                           | transaction_id     | INT, FK        | FK to Transactions (optional)               |
 | Transaction_Participants  | transaction_id     | INT, PK, FK    | FK to Transactions                          |
-
 # MoMo Transaction Analyzer
 
 ## Team Information
-**Team Name:** MoMo Analytics Team
 
 **Team Members:**
 - Teniola Adam Olaleye (Group Leader)
-- Gael Kamunuga Mparaye
 - Kevin Manzi
 - Michaella Kamikazi Karangwa
 - Rajveer Singh Jolly
-
 ## Teamwork at the Core
 
 **Team Members & Roles:**
-- **Teniola Adam Olaleye** (Team Lead): Coordinated the project, led the ETL and database design, and ensured everyone’s voice was heard.
 - **Gael Kamunuga Mparaye:** Took charge of XML parsing, collaborating closely with Michaella to validate data.
 - **Kevin Manzi:** Designed the dashboard, working hand-in-hand with Rajveer to ensure the frontend matched our backend data.
 - **Michaella Kamikazi Karangwa:** Led testing and data validation, often pairing with Gael for quality checks.
-- **Rajveer Singh Jolly:** Documented our process, kept the README up to date, and helped Kevin with user experience.
-
-> **How We Worked:**  
 > We split tasks based on strengths, but always reviewed each other’s work. For example, Teniola and Gael would brainstorm schema changes, then Michaella and Rajveer would test and document. We held regular check-ins, shared screens, and used GitHub Projects to track progress. Every member contributed code, ideas, and feedback.
 
 ---
 
 ## Project Overview
-
-This project analyzes MoMo (Mobile Money) transaction data from XML files. It cleans up the data, stores it in a database, and displays everything on a web dashboard. We built an ETL pipeline that takes messy transaction XML files and turns them into organized, easy-to-read information.
 
 MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Money) SMS/XML data into actionable insights. Our ETL pipeline cleans, normalizes, and categorizes transactions, storing them in a robust MySQL database and presenting them on a user-friendly dashboard.
 
@@ -130,10 +96,6 @@ MoMo Transaction Analyzer is a collaborative effort to turn raw MoMo (Mobile Mon
 
 **Architecture Diagram:**
 
-![System Architecture](architecture-diagram.png)
-
-The system follows a typical ETL architecture:
-- **Extract:** Parse XML transaction files (Gael, Michaella)
 - **Transform:** Clean, normalize, and categorize data (Teniola, Michaella)
 - **Load:** Store in SQLite/MySQL database (Teniola, Rajveer)
 - **Present:** JSON export to web dashboard and API (Kevin, Rajveer)
@@ -143,7 +105,6 @@ The system follows a typical ETL architecture:
 ## Project Management
 
 **Scrum Board:** [View on GitHub Projects](https://github.com/users/Teniolaaaa/projects/1/views/1)
-
 ---
 
 ## Project Structure
