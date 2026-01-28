@@ -111,7 +111,19 @@ DELETE FROM Transactions WHERE transaction_id = 5;
 ```
 *Removes a transaction record, e.g., if it was entered in error.*
 
-**[Insert screenshots of query results here]**
+
+
+**Create (INSERT):**  
+![Insert User Success](insert_user_success.png.png)
+
+**Read (SELECT):**  
+![Select Transactions Result](select_transactions_result.png.png)
+
+**Update:**  
+![Update User Success](update_user_success.png.png)
+
+**Delete (with constraint error):**  
+![Delete Transaction Error](delete_transaction_error.png.png)
 
 ---
 
@@ -122,7 +134,9 @@ DELETE FROM Transactions WHERE transaction_id = 5;
 - ENUMs and NOT NULL constraints enforce data validity.
 - Only authorized users can access or modify sensitive tables (if implemented).
 
-**[Insert screenshots of constraint enforcement or error messages here]**
+
+**Foreign Key Constraint Enforcement:**  
+![Delete Transaction Error](delete_transaction_error.png)
 
 ---
 
@@ -171,7 +185,7 @@ This project fully complies with the course AI usage policy. All substantive des
 ## 10. References
 - MySQL Documentation  
 - dbdiagram.io  
-- [Any other sources or tools used]
+
 
 ---
 
