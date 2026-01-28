@@ -1,0 +1,39 @@
+MoMo Transaction Analyzer ERD (ASCII Reference)
+
++-------------------+        +--------------------------+        +-------------------+
+|      Users        |        |   Transaction_Categories |        |   System_Logs     |
++-------------------+        +--------------------------+        +-------------------+
+| PK user_id        |<------ | PK category_id           |        | PK log_id         |
+| phone_number (U)  |        | category_name (U)        |        | log_time          |
+| name              |        | description              |        | log_level         |
+| created_at        |        +--------------------------+        | message           |
++-------------------+                                         | FK transaction_id  |
+        ^                                                        +-------------------+
+        |  (sender_id, receiver_id)
+        |  (M:1)
++-------------------+
+|   Transactions    |
++-------------------+
+| PK transaction_id |
+| transaction_code  |
+| transaction_date  |
+| amount            |
+| description       |
+| FK sender_id      |
+| FK receiver_id    |
+| FK category_id    |
++-------------------+
+        ^
+        | (M:N via Transaction_Participants)
+        |
++-----------------------------+
+| Transaction_Participants     |
++-----------------------------+
+| PK,FK transaction_id         |
+| PK,FK user_id               |
+| role (sender/receiver/other)|
++-----------------------------+
+
+Legend:
+PK = Primary Key, FK = Foreign Key, U = Unique
+Arrows show relationship direction (1:M, M:N)
