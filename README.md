@@ -140,9 +140,11 @@ MoMo Transaction Analyzer is a collaborative project to process, clean, and anal
 
 **ERD Diagram:**
 
-![ERD Diagram](docs/erd_diagram.png2.pdf)
+![ERD Diagram](docs/erd_diagram1.png)
 
-*See docs/erd_diagram.png2.pdf for the full ERD. For design rationale and attribute details, see [docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md).*  
+[ERD Diagram (PDF)](docs/erd_diagram.png2.pdf)
+
+*See docs/erd_diagram1.png for the full ERD. For design rationale and attribute details, see [docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md).*  
 
 ---
 
