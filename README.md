@@ -274,6 +274,10 @@ See [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20
    - JSON data modeling section
   
    > For the ERD diagram, see the embedded image and the [ERD Diagram (PDF)](docs/erd_diagram.png2.pdf) for high quality.
+
+- **ERD Design & Rationale:**
+  
+   [Read the ERD Design and Rationale](docs/erd_design_and_rationale.md)
 - **ERD & Architecture Diagrams:** [docs/erd_diagram.png](docs/erd_diagram.png), [docs/architecture_diagram.png](docs/architecture_diagram.png)
 - **AI Usage Log:** [docs/AI Usage Log - Google Docs2.pdf](docs/AI%20Usage%20Log%20-%20Google%20Docs2.pdf)
 - **Design Rationale:** [docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md)

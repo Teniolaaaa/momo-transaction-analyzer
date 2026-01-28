@@ -48,8 +48,10 @@ The MoMo Transaction Analyzer is a collaborative project by Group EWD 14, design
 ---
 
 ## 4. Design Rationale
-Our database design was driven by the need to efficiently store, query, and analyze MoMo transaction data while maintaining integrity and supporting future scalability. We identified key entities (Users, Transactions, Transaction_Categories, System_Logs) and resolved many-to-many relationships with a junction table (Transaction_Participants).  
-*For a detailed rationale and attribute list, see `docs/erd_design_and_rationale.md`.*
+Our database design was driven by the need to efficiently store, query, and analyze MoMo transaction data while maintaining integrity and supporting future scalability. We identified key entities (Users, Transactions, Transaction_Categories, System_Logs) and resolved many-to-many relationships with a junction table (Transaction_Participants).
+
+**For a detailed rationale and attribute list, see:**
+[docs/erd_design_and_rationale.md](docs/erd_design_and_rationale.md)
 
 ---
 
@@ -181,7 +183,7 @@ Example (simplified):
 - **Attribution:** All technical explanations, database design, and documentation are original and team-specific. Any AI-assisted code or text is clearly marked and limited to non-logic tasks.
 
 **Compliance Statement:**  
-This project fully complies with the course AI usage policy. All substantive design, logic, and reflection content was created by team members. AI was used only for allowed purposes and is transparently documented here.
+This project fully complies with the course AI usage policy. All substantive design, logic, and refgit add README.md docs/Database_Design_Document_EWD14.md docs/erd_diagram1.pnglection content was created by team members. AI was used only for allowed purposes and is transparently documented here.
 
 ---
 
